@@ -112,6 +112,7 @@ roastSelection.addEventListener(`change`, updateCoffees);
 //Function to update the rendered coffee list to match results based on what the user is typing into the Coffee Name input
 let coffeeSearch = document.getElementById("coffee-name");
 let filteredCoffeeNames = [];
+
 function updateValue(event) {
     event.preventDefault();
     console.log(event.target.value);
@@ -127,6 +128,7 @@ function updateValue(event) {
     tbody.innerHTML = renderCoffees(filteredCoffeeNames);
     filteredCoffeeNames = [];
 }
+
 // Event listener triggered when the user types inside the targeted input
 coffeeSearch.addEventListener(`input`, updateValue);
 
