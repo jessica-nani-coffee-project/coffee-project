@@ -14,7 +14,9 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+a {
+    color: black;
+}
 /*style for navigation menu*/
 .nav-link:hover {
     transition: all ease 0.3s;
